@@ -1,0 +1,35 @@
+.main-features {
+
+  &__text-block {
+    padding: 37px 0px;
+    background: @main-blue;
+    text-align: center;
+    text-transform: uppercase;
+    color:@white;
+  }
+  &__number {
+    padding: 15px 0px;
+  }
+  &__img {
+    line-height: 0px;
+  }
+}
+@media @tablet-widths {
+  .main-features {
+    &__text-block {
+      float: left;
+      width: 33%;
+      height: 260px;
+      box-sizing: border-box;
+    }
+    &__img {
+      float: left;
+      width: 67%;
+    }
+  }
+  section:nth-of-type(4) {
+    .main-features__text-block {
+      float: right;
+    }
+  }
+}

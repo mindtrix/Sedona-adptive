@@ -1,0 +1,132 @@
+.main-nav {
+  position: relative;
+  &__toggle {
+    position: absolute;
+    display: block;
+    width: 22px;
+    background-color: @main-blue;
+    top:23px;
+    right:20px;
+    z-index: 2;
+    border: 0px;
+    cursor: pointer;
+  &::before,
+ &::after {
+   content: "";
+   position: absolute;
+   top:0px;
+   left: 0px;
+   width: 28px;
+   height: 4px;
+   background-color: #ffffff;
+ }
+
+ &::before {
+   transform: rotate(45deg);
+
+ }
+
+ &::after {
+   transform: rotate(-45deg);
+ }
+ }
+  &__item {
+    text-align: center;
+  & a {
+    display: block;
+    padding: 7px;
+    font-size:18px;
+    line-height:40px;
+    color: @white;
+    text-transform: uppercase;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+    background-color: @main-blue;
+  }
+  & a[href] {
+  &:hover {
+    background-color: #669ec0;
+    border-top: 1px solid #669ec0;
+  }
+  &:active {
+    background: #5496bd;
+  }
+}
+    &:first-child {
+      border-top: 0px;
+    }
+    &:last-child {
+      border-bottom: 0px;
+    }
+    &--logo {
+      border-top: 0px;
+      border-bottom: 0px;
+      img {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+    &--menu-button-row {
+      min-height: 53px;
+      position: relative;
+    button {
+      position: absolute;
+      display: block;
+      top:23px;
+      right: 20px;
+      border: 0px;
+      background: @main-blue;
+      width: 23px;
+      height: 5px;
+      cursor: pointer;
+      &::before,
+      &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color:@main-blue;
+      }
+      &::before {
+      top: -9px;
+      }
+      &::after {
+      bottom: -9px;
+      }
+    }
+  }
+}
+}
+@media @tablet-widths {
+  .main-nav {
+    font-size: 0px;
+    &__toggle {
+      display: none;
+    }
+    &__item {
+      display: inline-block;
+      width: 20%;
+      & a {
+        font-size:14px;
+        color: #000000;
+        background-color: @white;
+        border: 0px;
+      }
+      &:nth-child(2) {
+        margin-right: 20%;
+      }
+    &--logo {
+      width: 20%;
+      position: absolute;
+      top:0px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &--menu-button-row {
+      display: none;
+    }
+    }
+  }
+}

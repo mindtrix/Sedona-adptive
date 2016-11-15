@@ -1,0 +1,26 @@
+.features {
+  &__item {
+    text-transform: uppercase;
+    padding: 36px;
+    padding-left: 70px;
+    padding-right: 40px;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+  &__description {
+    font-size: 14px;
+    line-height:21px;
+  }
+}
+@media @tablet-widths {
+  .features {
+    &__item {
+      float: left;
+      width: 33.3%;
+      box-sizing: border-box;
+    }
+  }
+}

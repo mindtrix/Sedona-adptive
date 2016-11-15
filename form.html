@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">фото и видео</a></li>
+          <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="https://www.htmlacademy.ru">HTML academy</a></li>
+          <li class="main-nav__item--logo"><a href=""><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Logo"></a></li>
+          <li class="main-nav__item" ><button class="menu-button" type="button" name="button"></button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="report-intro">
+        <div class="banner-small">
+          <img src="img/bg-back-mobile@1x.jpg" width="100%" height="157" alt="">
+        </div>
+        <div class="report-intro__text-block">
+          <p class="report-intro__title">Оставьте свой отзыв</p>
+          <p class="report-intro__instruction">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+      </section>
+      <section class="report">
+        <form class="report__form" action="get">
+          <fieldset class="report__full-name">
+            <p class="report__title">ПРЕДСТАВТЕСЬ,ПОЖАЛУЙСТА:</p>
+            <label for="name">имя</label>
+            <input id="name" type="text"><br>
+            <label for="surname">фамилия</label>
+            <input id="surname" type="text"><br>
+            <label for="middle-name">отчество</label>
+            <input id="middle-name" type="text"><br>
+          </fieldset>
+          <fieldset class="report__contacts">
+            <p class="report__title">контактная информация:</p>
+            <label for="phone-numer">контактный телефон</label>
+            <input id="phone-numer" type="tel" placeholder="Введите телефон" required="Ошибка, перепроверьте номер"></input>
+            <label for="email">электронная почта:</label>
+            <input id="email" type="email" placeholder="Введите e-mail" required></input>
+          </fieldset>
+          <fieldset class="report__rating">
+            <p class="report__title">Ваше Общее впечатление:</p>
+            <input id="positive" type="radio" checked>
+            <label for="positive">Скорее положительное</label><br>
+            <input id="negative" type="radio">
+            <label for="negative">Скорее отрицательное</label><br>
+            <input id="neutral" type="radio">
+            <label for="neutral">Затрудняюсь ответить</label><br>
+          </fieldset>
+          <fieldset class="report__visited-places">
+            <p class="report__title">посещенные достопримечательности:</p>
+            <input id="devil's-bridge" type="checkbox" checked>
+            <label for="devil's-bridge">Мост Дьявола</label><br>
+            <input id="park" type="checkbox">
+            <label for="park">Слайд-парк</label><br>
+            <input id="bell-mountain" type="checkbox" checked>
+            <label for="bell-mountain">Гора-Колокол</label><br>
+            <input id="red-rocks" type="checkbox" checked>
+            <label for="red-rocks">Красные скалы</label><br>
+          </fieldset>
+          <fieldset class="report__comment">
+            <p class="report__title">Опишите свои эмоции:</p>
+            <textarea name="name" rows="8" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
+            <input class="report__btn btn" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__tag">#visitsedona</p>
+        <div class="page-footer__social">
+          <div class="social-links">
+            <a class="social-link social-link-twt"></a>
+            <a class="social-link social-link-fb"></a>
+            <a class="social-link social-link-yt"></a>
+          </div>
+        </div>
+        <div class="page-footer__copyright">
+          <span>Разработано</span><a href="#"><img src="img/logo-htmlacademy.svg" width="26" height="35" alt="html-academy"></a>
+        </div>
+      </div>
+   </footer>
+  </body>
+</html>
